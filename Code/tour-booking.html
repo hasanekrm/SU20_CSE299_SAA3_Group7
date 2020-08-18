@@ -1,0 +1,425 @@
+
+<!DOCTYPE html>
+<html class="load-full-screen" lang="en">
+
+<head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="theme-color" content="#f9676b">
+        <!-- Favicon -->
+        <link type="image/x-icon" rel="shortcut icon" href="assets/images/vb_icon.png" />
+        <!-- Meta Title -->
+        <title>XXXXXXXX</title>
+        <!-- Meta Description  -->
+        <meta name="description" content="XXXXXXXX - Best site for travelers and travel agency in Bangladesh. Here travelers can find their perfect tour plan, best travel agency and best deal. And travel agency can also run their service very easily and happily. So what are you waitting for, Let's descover the beauty of Bangladesh.">
+        
+        <!-- Google Font -->
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
+        <!-- Font Awesome -->
+        <link href="assets/libs/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+        <!-- Animate css -->
+        <link href="assets/libs/animate/animate.min.css" rel="stylesheet">
+        <!-- Crousel css -->
+        <link href="assets/libs/owl.carousel/owl.carousel.min.css" rel="stylesheet">
+        <link href="assets/libs/owl.carousel/owl-carousel-theme.min.css" rel="stylesheet">
+        <!-- Bootstrap css -->
+        <link href="assets/libs/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <!-- Theme css --> 
+        <link href="assets/css/style.css" rel="stylesheet" type="text/css"/>
+
+        <!-- Switch Style css -->
+        <link href="assets/switch-style/switch-style.css" rel="stylesheet" type="text/css"/>
+        <!-- Switch Color Style css -->
+        <link href="#" data-style="styles" rel="stylesheet">
+
+
+
+
+
+        
+
+    </head>
+    <body class="load-full-screen">
+ 
+
+      
+
+        <div class="site-wrapper">
+            <!-- Start Navbar Section -->
+            <section>
+                <div class="transparent-menu">
+                    <div class="container nav-container">
+                        <!-- Start Header -->
+                        <div class="navbar-wrapper">
+                            <div class="navbar navbar-default navbar-expand-lg navbar-light" role="navigation">
+                                <a class="navbar-brand logo" href="index.php"><img src="" alt="" /> XXXXXXXX</a>
+                                <!-- Start Responsive Menu Button -->
+                                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target=".navbar-collapse">
+                                    <i class="fa fa-navicon"></i>
+                                </button>
+                                <!-- End Responsive Menu Button -->
+                                <!-- Start Menu -->  
+                                <div class="navbar-collapse collapse">
+                                    <ul class="navbar-nav navbar-right ml-auto">
+                                        <li class="dropdown nav-item">
+                                            <a class="toggle nav-link" href="#" data-toggle="dropdown">HOME </a>
+                                            
+                                        </li>
+                                        <li class="dropdown mega nav-item">
+                                            <a class="toggle nav-link" href="#" data-toggle="dropdown">Resprts</a>
+                                        </li>
+                                        <li class="dropdown mega nav-item">
+                                            <a class="toggle nav-link" href="#" data-toggle="dropdown">Packages</a>
+                                            
+                                        </li>
+                                      
+                                        <li class="dropdown mega nav-item">
+                                            <a class="toggle nav-link" href="#" data-toggle="dropdown">CAR</a>
+                                            
+                                        </li>
+                                        <li class="dropdown nav-item">
+                                            <a class="toggle nav-link" href="travelers.php">BLOG </a>
+                                            
+                                        </li>
+                                        <li class="dropdown nav-item">
+                                            <a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">Service Provider</a>
+                                            <ul class="dropdown-menu">
+                                                <li class="nav-item"><a class="nav-link" href="service-provider.php">Tour Agency</a></li>
+                                                <li class="nav-item"><a class="nav-link" href="service-provider.php">Hotel Management</a></li>
+                                                <li class="nav-item"><a class="nav-link" href="service-provider.php">Rent-A Car</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item"><a class="nav-link" href="contact-us.html">CONTACT US</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="contact-us.html">user</a></li>
+                                    </ul>
+                                </div>
+                                <!-- End Menu -->  
+                            </div>
+                        </div>
+                        <!-- End Header -->
+                    </div>
+                </div>
+                <!-- End Menu container -->
+            </section>
+            <!-- End Navbar Section -->
+
+
+        
+
+          <Section class="page-title dark-overlay">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 text-center">
+                            <h3><?php echo $tour_title  ;?></h3>
+                            <h4><i class="fa fa-map-marker"></i> <?php echo $location  ;?></h4>
+                            <p>Rating: <?php echo  $avgratinground ;?> <i class="fa fa-star"></i></p>
+                            <p><span><i class="fa fa-calendar"></i> Duration: <?php echo $duration  ;?> </span><span> <i class="fa fa-money"></i>Cost per Person : <?php echo $price  ;?> ৳ </span></p>
+                            <a href="tel:<?php echo $phone_no  ;?>" ><i class='fa fa-phone' style='font-size:30px;color:white'></i></a>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="message.php?tour_id=<?php echo $tour_id  ;?>" class="" ><i class="fa fa-envelope" style="font-size:30px;color:white"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End Page Title Section -->
+
+
+            <!-- Start Tour Booking Tab Section  -->
+            <section class="section-wrapper">
+                <div class="container">
+                    <div class="booking-tab">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <center><h4> <font color="black" ><span class="Send"><?php echo $Send;   ?></span></font> </h4></center>
+                                <ul class="nav nav-tabs nav-fill">
+                                    <li class="nav-item"><a data-toggle="tab" href="#passenger-info" class="nav-links"><i class="fa fa-male"></i> <span>Your Info</span></a></li>	
+                                    <li class="nav-item"><a data-toggle="tab" href="#billing-info" class="nav-link"><i class="fa fa-check-square"></i> <span>Billing Info</span></a></li>
+                                </ul> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End Tour Booking Tab Section  -->
+ 
+
+            <!-- Start Tour Booking Details Section  -->
+            <section class="section-wrapper booking-detail pt-0">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-md-7">
+                            <!-- Start Tour Booking Tab Content  -->
+                            <div class="tab-content">
+                                <!-- Start Review Booking Tab Content  -->
+                               
+                                <!-- Start Passenger info Tab Content  -->
+                                <div id="passenger-info" class="tab-pane fade show active">
+                                    <div class="login-box">
+                                        <h4>Book Now</h4>
+                                        <div class="booking-form">
+                                            <!-- Start Guest Details  -->
+                                            <form method="POST" >
+                                                <div class="form-row">
+                                                    <div class="form-group col-md-6">
+                                                        <label>Full Name</label>
+                                                        <input type="text" name="fullname" placeholder="Enter Full Name" class="form-control" required autocomplete="off">
+                                                    </div>
+                                                    
+                                                    <div class="form-group col-md-6">
+                                                        <label>Phone Number</label>
+                                                        <input class="form-control" type="phone" name="phonenumber"
+                                                        placeholder="Ex: 01X12345678"
+                                                        pattern="[0]+[1]+[7/8/9/6/5/3]+[0-9]{8}" required /><span class="validity"></span>
+                                                    </div>
+                                                    <div class="form-group col-md-6">
+                                                        <label>Emergency Contact Person Name</label>
+                                                        <input type="text" name="ecp_name" placeholder="Enter Emergency Contact Person Name" class="form-control" required autocomplete="off">
+                                                    </div>
+                                                    <div class="form-group col-md-6">
+                                                        <label>Contact Person Number</label>
+                                                        <input class="form-control" type="phone" name="ecp_phonenumber"
+                                                        placeholder="Ex: 01X12345678"
+                                                        pattern="[0]+[1]+[7/8/9/6/5/3]+[0-9]{8}" required /><span class="validity"></span>
+                                                    </div>
+                                                    <div class="form-group col-md-6">
+                                                        <label>Your Address</label>
+                                                        <input type="text" name="your_address" placeholder="Enter Your Address" class="form-control" required autocomplete="off">
+                                                    </div>
+                                                    <div class="form-group col-md-6">
+                                                        <label>Contact Person Address</label>
+                                                        <input type="text" name="ecp_address" placeholder="Enter Contact Person Address" class="form-control" required autocomplete="off">
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                    <center><label> -: Total Number of Member Including You :-</label></center>
+
+                                                    </div>
+                                                    <div class="form-group col-md-6">
+                                                        <center><label>Adult</label></center>
+                                                        <input id="hotel_adult_count" name="adult" value="1" class="form-control quantity-padding" required autocomplete="off">
+                                                    </div>
+
+                                                    <div class="form-group col-md-6">
+                                                        <center><label>Child</label></center>
+                                                        <input id="hotel_child_count" name="child" value="0" class="form-control quantity-padding">
+                                                    </div>
+                                                <?php 
+                                                    include('Config.php');
+                                                    $tour_id= $_GET["tour_id"];
+                                                    $tour_id=mysqli_real_escape_string($db,$tour_id);
+                                                    $g_user_id=$_SESSION['g_user_id'];
+                                                    $sql187 = "SELECT * FROM book where g_user_id='$g_user_id' AND tour_id='$tour_id' ";
+                                                    $result187 = $db->query($sql187);
+                                                    if($result187->num_rows > 0){
+
+                                                        echo "
+                                                        <div class='form-group col-md-12 text-center mt-3'>
+                                                        <center><p>Information already Send. You Can Update Info.</p></center>
+                                                        <button class='btn btn-theme md-btn' type='submit' name='continue'>UPDATE <i class='fa fa-chevron-right'></i></button>
+                                                    </div>
+                                                        ";
+                                                    }
+                                                    else{
+                                                        echo "
+                                                        <div class='form-group col-md-12 text-center mt-3'>
+                                                        <button class='btn btn-theme md-btn' type='submit' name='continue'>CONTINUE <i class='fa fa-chevron-right'></i></button>
+                                                    </div>
+                                                    ";
+                                                    }
+
+
+                                                 ?>
+                                                    
+                                                </div>
+                                            </form>
+                                            <!-- End Guest Details  -->
+                                        </div>
+                                    </div>                                       
+                                </div>
+                                <!-- End Passenger info Tab Content  -->
+                                <!-- Start Billing info Tab Content  -->
+                                
+
+                                <div id="billing-info" class="tab-pane fade">
+                                    <div class="login-box">
+                                        <h4>Payment</h4>
+                                        <div class="booking-form">
+                                            <center><h4><?php echo $message  ;?></h4></center>
+
+                                            <!-- Start Save Card  -->
+                                            <div class="saved-card">
+
+                                                <form method="POST" >
+                                                   <div class="form-group mt-12 float-right">
+                                                    <a class="navbar-brand logo" href="https://www.bkash.com/products-services/payment"><img width="105" src="assets/images/bkash-logo.png" alt="" /> <br>How To Pay</a>
+                                                   </div>
+                                                    <div class="form-group mt-6">
+                                                        <p>Tour Agency Name: <?php echo $agency_name  ;?></p>
+                                                        <p>Contact Number: <a href="tel:"> <?php echo $phone_no  ;?></a></p>
+                                                        <p>Office Address: <?php echo $office_address  ;?></p>
+                                                        <h4>Bkash Number: <?php echo $bkash_no  ;?></4>
+                                                         
+                                                    </div>
+                                                    <div class="form-group mt-6">
+                                                        <h4>Booking Advance: <?php echo $min_AD_money  ;?> Taka</h4>
+                                                    </div>
+                                                    
+                                                    <div class="form-group col-md-6">
+                                                        <label>Your bkash Number</label>
+                                                        <input class="form-control" type="phone" name="your_bkash_no"
+                                                        placeholder="Ex: 01X12345678"
+                                                        pattern="[0]+[1]+[7/8/9/6/5/3]+[0-9]{8}" required /><span class="validity"></span>
+                                                    </div>
+                                                     <div class="form-group col-md-6">
+                                                        <label>Transaction ID/TrxID</label>
+                                                        <input class="form-control" type="text" name="transaction_id"
+                                                        placeholder="Enter TrxID"
+                                                        pattern=".{10}" required /><span class="validity"></span>
+                                                    </div>
+                                                    <div class="form-group mt-6">
+                                                        <center><h4>Before payment make a call with tour agency.</h4></center>
+                                                    </div>
+                                                    <?php 
+                                                    include('Config.php');
+                                                    $tour_id= $_GET["tour_id"];
+                                                    $tour_id=mysqli_real_escape_string($db,$tour_id);
+                                                    $g_user_id=$_SESSION['g_user_id'];
+                                                    $sql187 = "SELECT * FROM book where g_user_id='$g_user_id' AND tour_id='$tour_id' AND payment != 0 ";
+                                                    $result187 = $db->query($sql187);
+                                                    if($result187->num_rows > 0){
+
+                                                        echo "<center><p>Information already Send. You Can Send it Again.</p></center>
+                                                        <div class='form-group col-md-12 text-center mt-3'>
+                                                        <button class='btn btn-theme md-btn' type='submit' name='confirm_booking' >Send Again</i></button>
+                                                    </div>
+                                                        ";
+                                                    }
+                                                    else{
+                                                        echo "
+                                                        <div class='form-group col-md-12 text-center mt-3'>
+                                                        <button class='btn btn-theme md-btn' type='submit' name='confirm_booking' >CONFIRM BOOKING</i></button>
+                                                    </div>
+                                                    ";
+                                                    }
+
+
+                                                 ?>
+                                                    
+                                                </form>
+                                            </div>
+                                            
+                                                                                      <!-- End Paypal Payment  -->
+                                        </div>
+                                    </div>                                       
+                                </div>
+                                <!-- End Billing info Tab Content  -->
+                            </div>
+                            <!-- End Tour Booking Tab Content  -->
+                        </div>
+                        <!-- Start Booking Sidebar  -->
+                        <div class="col-lg-4 col-md-5 booking-sidebar">
+                            <!-- Start Sidebar Widget  -->
+                            <div class="sidebar-item sidebar-booking-summary">
+                                <h5><i class="fa fa-bookmark"></i> Your Selection</h5>
+                                <div class="sidebar-item-body">
+                                    <div class="row">
+                                        <div class="col-md-6 text-center">
+                                            <div class="date">
+                                                <div class="title">Start</div>
+                                                <h2><?php echo date('d', strtotime($start_date))  ;?></h2>
+                                                <h6><?php echo date('M', strtotime($start_date))  ;?></h6>
+                                                <h6><?php echo date('Y', strtotime($start_date))  ;?></h6>
+                                                <h5><?php echo date('D', strtotime($start_date))  ;?></h5>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 text-center">
+                                            <div class="date">
+                                              <div class="title">Back</div>
+                                                <h2><?php echo date('d', strtotime($end_date))  ;?></h2>
+                                                <h6><?php echo date('M', strtotime($end_date))  ;?></h6>
+                                                <h6><?php echo date('Y', strtotime($end_date))  ;?></h6>
+                                                <h5><?php echo date('D', strtotime($end_date))  ;?></h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <ul class="bordered-li">
+                                        <li>Tour <span><?php echo $tour_title  ;?></span></li>
+                                        <li>Location <span><?php echo $location  ;?></span></li>
+                                        <li>Tour Duration <span><?php echo $duration  ;?></span></li>
+                                        <li>Total Persons <span><?php echo $adult  ;?> ADULTS and <?php echo $child  ;?> CHILD</span></li>
+                                        <li>Cost for Adult <span><?php echo " $price * $adult = " ;?><?php echo  $price * $adult ;?> Taka</span></li>
+                                        <li>Cost for Child <span><?php echo " $price_for_child * $child = ";?> <?php echo  $price_for_child * $child ;?> Taka</span></li>
+                                        <li class="total">Amount due <span><?php echo ($price * $adult) +($price_for_child * $child) ;?> Taka</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- End Sidebar Widget  -->
+                            <!-- Start Sidebar Widget  -->
+
+                            <!-- End Sidebar Widget  -->
+                            <!-- Start Sidebar Widget  -->
+                            <div class="sidebar-item contact-box">
+                                <h5><i class="fa fa-phone"></i>Need Help?</h5>
+                                <div class="sidebar-item-body">
+                                    <p>Need Help? Call us or drop a message. Our agents will be in touch shortly.</p>
+                                    <p><i class="fa fa-phone"></i><a href="tel:"> <?php echo $phone_no  ;?></a></p>
+                                    <p><i class="fa fa-facebook"></i> <a href="">Message via FB</a></p>
+                                     <center><a href="" class="btn btn-theme md-btn" >Message</a></center>
+                                    
+                                </div>
+                            </div>
+                            <!-- End Sidebar Widget  -->
+                        </div>
+                        <!-- End Booking Sidebar  -->
+                    </div>
+                </div>
+            </section>
+            <!-- End Tour Booking Details Section  -->
+
+
+
+            <!-- Start Footer Section -->
+            <section class="section-wrapper pb-0">
+                <footer class="main-footer">
+                   
+
+                    <div class="main-footer-nav">
+                        <div class="container">
+                            <a href="about_us.php"><center><h5><u>About Us</u></h5></center></a>
+                                    
+                                    <center><p>Copyright &copy; XXXXXXXX.com . All Rights Reserved.</p></center>
+                             
+                        </div>
+                    </div>
+                    
+                </footer>
+            </section>
+
+        </div>
+
+        <!-- Load Scripts -->
+        <!-- jquery --> 
+        <script src="assets/libs/jquery/jquery-2.2.4.min.js"></script>
+        <!-- jquery UI --> 
+        <script src="assets/libs/jquery-ui/jquery-ui.min.js"></script>
+        <!-- Respond --> 
+        <script src="assets/libs/respond/respond.min.js"></script>
+        <!-- Bootstrap js -->
+        <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <!-- Bootstrap Timepicker js -->
+        <script src="assets/libs/bootstrap-timepicker/js/bootstrap-timepicker.min.js" type="text/javascript"></script>
+        <!-- owlcarousel js -->
+        <script src="assets/libs/owl.carousel/owl.carousel.min.js"></script>
+        <!-- wow js -->
+        <script src="assets/libs/wow/wow.min.js"></script>
+        <!--internal js--> 
+        <script src="assets/js/internal.js"></script>
+
+        <!-- Switch Style js -->
+        <script src="assets/switch-style/switch-style.js"></script>
+
+    </body>
+
+
+</html>

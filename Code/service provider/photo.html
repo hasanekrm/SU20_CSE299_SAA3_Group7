@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>photo</title>
+	<link rel="stylesheet" type="text/css" href="css/dropzone.css" />
+	<script type="text/javascript" src="js/dropzone.js"></script>
+</head>
+<body>
+<script>
+//Disabling autoDiscover
+Dropzone.autoDiscover = false;
+
+$(function() {
+    //Dropzone class
+    var myDropzone = new Dropzone(".dropzone", {
+		url: "upload.php",
+		paramName: "file",
+		maxFilesize: 2,
+		maxFiles: 10,
+		acceptedFiles: "image/*,application/pdf"
+	});
+});
+</script>
+<script>
+//Disabling autoDiscover
+Dropzone.autoDiscover = false;
+
+$(function() {
+    //Dropzone class
+    var myDropzone = new Dropzone(".dropzone", {
+		url: "upload.php",
+		paramName: "file",
+		maxFilesize: 2,
+		maxFiles: 10,
+		acceptedFiles: "image/*,application/pdf",
+		autoProcessQueue: false
+	});
+	
+	$('#startUpload').click(function(){           
+		myDropzone.processQueue();
+	});
+});
+</script>
+<div class="dropzone"></div>
+<form action="upload.php" class="dropzone"></form>
+<div class="dropzone"></div>
+	
+<button id="startUpload">UPLOAD</button>
+</body>
+</html>
