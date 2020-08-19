@@ -23,7 +23,7 @@
         <!-- Favicon -->
         <link type="image/x-icon" rel="shortcut icon" href="assets/images/vb_icon.png" />
         <!-- Meta Title -->
-        <title>Vromon Bilash</title>
+        <title>XXXXXXXXXX</title>
         <!-- Meta Description  -->
         <meta name="description" content="XXXXXXXX - Best site for travelers and travel agency in Bangladesh. Here travelers can find their perfect tour plan, best travel agency and best deal. And travel agency can also run their service very easily and happily. So what are you waitting for, Let's descover the beauty of Bangladesh.">
         
